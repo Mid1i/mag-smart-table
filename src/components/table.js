@@ -13,7 +13,7 @@ export function initTable(settings, onAction) {
 
     before.reverse().forEach(item => {
         root[item] = cloneTemplate(item);
-        root.container.prependChild(root[item].container);
+        root.container.prepend(root[item].container);
     });
 
     after.forEach(item => {
